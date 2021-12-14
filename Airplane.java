@@ -14,7 +14,7 @@ public class Airplane {
   /**
   * The setSpeed method.
   *
-  * @param speed the new speed.
+  * @param newSpeed the new speed.
   */
   public void setSpeed(final int newSpeed) {
     this.speed = newSpeed;
