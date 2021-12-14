@@ -3,22 +3,22 @@ final class FlyTest {
   /**
   * The start speed of airplane.
   */
-  private static int startSpeed = 212;
+  final static int startSpeed = 212;
 
   /**
   * The start speed of jet.
   */
-  private static int jetSpeed = 422;
+  final static int jetSpeed = 422;
 
   /**
   * The number of times while loop triggers.
   */
-  private static int times = 4;
+  final static int times = 4;
 
   /**
   * Value for check in code.
   */
-  private static int max = 5000;
+  final static int max = 5000;
 
   /**
   * Prevent instantiation

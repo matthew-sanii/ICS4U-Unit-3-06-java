@@ -20,7 +20,7 @@ public class Jet extends Airplane {
   public void setSpeed(final int speed) {
     super.setSpeed(speed * MULTIPLIER);
   }
-  
+
   /**
   * The accelerate method.
   */
