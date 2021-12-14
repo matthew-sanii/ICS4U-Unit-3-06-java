@@ -3,22 +3,22 @@ final class FlyTest {
   /**
   * The start speed of airplane.
   */
-  final static int startSpeed = 212;
+  final static int STARTSPEED = 212;
 
   /**
   * The start speed of jet.
   */
-  final static int jetSpeed = 422;
+  final static int JETSPEED = 422;
 
   /**
   * The number of times while loop triggers.
   */
-  final static int times = 4;
+  final static int TIMES = 4;
 
   /**
   * Value for check in code.
   */
-  final static int max = 5000;
+  final static int MAX = 5000;
 
   /**
   * Prevent instantiation
@@ -40,16 +40,16 @@ final class FlyTest {
   */
   public static void main(final String[] args) {
     Airplane biplane = new Airplane();
-    biplane.setSpeed(startSpeed);
+    biplane.setSpeed(STARTSPEED);
     System.out.println(biplane.getSpeed());
     Jet boeing = new Jet();
-    boeing.setSpeed(jetSpeed);
+    boeing.setSpeed(JETSPEED);
     System.out.println(boeing.getSpeed());
     int x = 0;
-    while (x < times) {
+    while (x < TIMES) {
       boeing.accelerate();
       System.out.println(boeing.getSpeed());
-      if (boeing.getSpeed() > max) {
+      if (boeing.getSpeed() > MAX) {
         biplane.setSpeed(biplane.getSpeed() * 2);
       } else {
         boeing.accelerate();
